@@ -1,0 +1,140 @@
+   <!DOCTYPE HTML>
+   <html lang="pt-br">
+   <head>
+   <title>Página de cadastro</title>
+   <meta charset="utf-8">
+   <meta name="author" content="Luziano Silva Neves">
+   </head>
+    <body>
+    <header>
+    <h1>Seja bem-vindo a nosso sistema  de cadastro pessoal</h1>
+    <p>Observe o formulário a seguir, e preencha todos os campos corretamente.</p>
+   <br>
+    </header>
+    <main>
+    <form method="POST">
+    <fieldset>
+    <legend>Dados pessoais</legend>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required>
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="sobrenome" required>
+    <label for="cpf">CPF:</label>
+    <input tipe="text" name="cpf" maxlength="11" placeholder="Insira seu cpf:" id="cpf" required>
+    <label for="rg">RG:</label>
+    <input type="text" name="rg" maxlength="13" id="rg" required>
+    <label for="data">Data de nascimento:</label>
+    <input type="date" name="data" id="data" required>
+    <label for="estadocivil">Estado civil:</label>
+    <select name="estadocivil"id="estadocivil">
+    <option>Selecione...</option value="00">
+     <option>Solteiro (a)</option value="01">
+    <option>Casado (a)</option value="02">
+    <option>Outros</option value="03">
+    </select>
+    <label for="telfixo">Telefone fixo:</label>
+    <input type="tel" name="telefonefixo" id="telfixo">
+    <label for="cel">Telefone celular:</label>
+    <input type="tel" name="telcelular" id="cel" required>
+    </fieldset>
+   <br>
+    <fieldset>
+    <legend>Sexo</legend>
+    <label for="sf">Feminino</label>
+    <input type="radio" name="sexo" id="sf" value="f">
+<br>
+    <label for="sm">Masculino</label>
+    <input type="radio" name="sexo" id="sm" value="m">
+    </fieldset>
+   <br>
+    <fieldset>
+    <legend>Endereço</legend>
+    <label for="rua">Rua:</label>
+    <input type="text" name="rua" id="rua" required> <br>
+    <label for="numero">Número:</label>
+    <input type="text" name="numero" id="numero" required> <br>
+    <label for="bairro">Bairro:</label>
+    <input type="text" name="bairro" id="bairro" required> <br>
+    <label for="cidade">Cidade:</label>
+    <input type="text" name="cidade" id="cidade" required> <br>
+    <label for="estado">Estado:</label>
+    <select name="estado" id="estado"> 
+    <option>Escolha seu estado...</option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+    </select>
+    <label for="cep">CEP: </label>
+    <input type="text" name="cep" maxlength="8" id="cep">
+    </fieldset>
+   <br>
+    <fieldset>
+    <legend>Logim</legend>
+    <label for="email">e-mail:</label>
+    <input type="e-mail" name="email" placeholder="esample@gmail.com" id="email" required>
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" placeholder="Mínimo 8 caracteres." id="senha" required>
+    <label for="confirmsenha">Confirme a senha:</label>
+    <input type="password" name="confirmsenha" id="confirmsenha" required>
+    </fieldset>
+   <br>
+    <label for="obs">Informações complementares:</label>
+    <textarea name="observacao" id="obs" placeholder="Deixe sua mensagem:"> </textarea>
+  <br>
+   <input type="submit" name="enviar" onclick="pergunta1();" value="Enviar">
+   <input type="reset" onclick="pergunta2();" value="Limpar">
+    <br>
+    <br>
+    </form>
+    </main>
+    <footer>
+    <p>
+    © Luziano Silva Neves <br>
+  <br>
+    <a href="https://linkedin.com/in/luziano-silva-neves-3b087820b" target="_blank">Conecte-se comigo no Linkedin:</a><br>
+    <a href="https://github.com/LuzianoSilva/Formulario-Cadastro-Pessoal" target="_blank">Meu projeto no GitHub:</a><br>
+     Projeto licensiado sob a<a href="https://www.mit.edu/~amini/LICENSE.md"</a>
+        </p>
+    </footer>
+
+  <script>
+  function pergunta1() {
+  if (confirm("Deseja enviar agora?")) {
+  return true;
+}
+  else {
+  return false;
+}
+}
+
+  function pergunta2() {
+  alert("Todos os campos serão apagados.");
+  }
+  </script>
+
+    </body>
+    </html>
