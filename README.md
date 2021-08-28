@@ -9,7 +9,7 @@
 ### Autor:
 
 - [Luziano Silva Neves](https://github.com/LuzianoSilvm)
-- **Idade**: 32 anos
+- **Idade**: 23 anos
 - **Tipo de deficiência:** Cegueira
 
 ### Objetivo:
@@ -22,8 +22,7 @@ Visual Studio Code no Windows.
 
 ### Linguagens: 
 
-- CSS
-- HTML
+- - HTML
 - JavaScript
 
 ## Descrição do site
